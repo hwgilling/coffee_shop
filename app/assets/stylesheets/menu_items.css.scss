@@ -4,12 +4,24 @@
 
 .menu_items {
 	table {
-		border-collapse: collapse;
+		
 	}
 
 	table tr td {
-		padding: 10px;
-		vertical-align: top;
+		padding: 20px;
+		vertical-align: center;
+	}
+
+	.name {
+		font-size: medium;
+	}
+
+	.size {
+		font-size: medium;
+	}
+
+	.cost {
+		font-size: medium;
 	}
 
 	.list_image {
@@ -21,6 +33,7 @@
 		font-size: x-small;
 		text-align: right;
 		padding-left: 1em;
+		padding: 5px;
 	}
 
 	.list_line_even {

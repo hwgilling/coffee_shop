@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name =" viewport" content =" width = device-width, initial-scale = 1" >
+	<meta name ="viewport" content=" width=device-width, initial-scale=1" >
 
   <title>CoffeeShop</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -12,6 +12,19 @@
 </head>
 
 <body class='%= controller.controller_name %>'>
+
+	<header class=" navbar navbar-inverse">
+	  <div class="container">
+	    <%= link_to "Coffee Shop", '#', id: "logo" %>
+	    <nav>
+	      <ul class="nav navbar-nav pull-right">
+	        <li><%= link_to "Home",   '#' %></li>
+	        <li><%= link_to "Help",   '#' %></li>
+	        <li><%= link_to "Log in", '#' %></li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
 
  <div class="container">
  	<%= yield %>

@@ -1,15 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  customer_id: 1
   item_total: 9.99
   tax: 9.99
   total: 9.99
-  payment_id: 1
 
 two:
-  customer_id: 1
   item_total: 9.99
   tax: 9.99
   total: 9.99
-  payment_id: 1

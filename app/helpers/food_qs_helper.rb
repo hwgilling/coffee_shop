@@ -1,0 +1,2 @@
+module FoodQsHelper
+end

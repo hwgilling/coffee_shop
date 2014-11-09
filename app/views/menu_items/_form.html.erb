@@ -12,16 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :size %><br>
-    <%= f.text_field :size %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
+    <table class="menu_items">
+      <tr>
+        <th><%= f.label :name %></th>
+        <th>&nbsp&nbsp</th>
+        <th><%= f.label :size %></th>
+        <th>&nbsp&nbsp</th>
+        <td><%= f.label :cost %></td>
+      </tr>
+      <tr>
+        <td><%= f.text_field :name %></td>
+        <th>&nbsp&nbsp</th>
+        <td><%= f.select(:size, [['S','S'], ['M','M'], ['L','L'], ['XL','XL']]) %></td>
+        <th>&nbsp&nbsp</th>
+        <td><%= f.text_field :cost %></td>
+      </tr>
+    </table>
   </div>
   <div class="actions">
     <%= f.submit %>

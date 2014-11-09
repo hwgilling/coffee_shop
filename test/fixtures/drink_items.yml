@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  name: MyString
+  size: MyString
+  extra_shot: 1
+  milk: MyString
+  addins: MyString
+  iced: false
+  cost: 9.99
+
+two:
+  order_id: 1
+  name: MyString
+  size: MyString
+  extra_shot: 1
+  milk: MyString
+  addins: MyString
+  iced: false
+  cost: 9.99

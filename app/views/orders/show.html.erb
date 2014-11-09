@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Customer:</strong>
-  <%= @order.customer_id %>
-</p>
-
-<p>
   <strong>Item total:</strong>
   <%= @order.item_total %>
 </p>
@@ -18,11 +13,6 @@
 <p>
   <strong>Total:</strong>
   <%= @order.total %>
-</p>
-
-<p>
-  <strong>Payment:</strong>
-  <%= @order.payment_id %>
 </p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |

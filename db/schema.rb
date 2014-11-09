@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105225113) do
+ActiveRecord::Schema.define(version: 20141108192259) do
+
+  create_table "barista_qs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "order_id"
+  end
 
   create_table "customers", force: true do |t|
     t.string   "name"
@@ -25,6 +31,34 @@ ActiveRecord::Schema.define(version: 20141105225113) do
     t.datetime "updated_at"
   end
 
+  create_table "drink_items", force: true do |t|
+    t.string   "name"
+    t.string   "size"
+    t.integer  "extra_shot"
+    t.string   "milk"
+    t.string   "addins"
+    t.boolean  "iced"
+    t.decimal  "cost"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "order_id"
+  end
+
+  create_table "food_items", force: true do |t|
+    t.string   "name"
+    t.string   "size"
+    t.decimal  "cost"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "order_id"
+  end
+
+  create_table "food_qs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "order_id"
+  end
+
   create_table "menu_items", force: true do |t|
     t.string   "name"
     t.string   "size"
@@ -34,11 +68,18 @@ ActiveRecord::Schema.define(version: 20141105225113) do
   end
 
   create_table "orders", force: true do |t|
-    t.integer  "customer_id"
     t.decimal  "item_total"
     t.decimal  "tax"
     t.decimal  "total"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "customer_id"
     t.integer  "payment_id"
+  end
+
+  create_table "payments", force: true do |t|
+    t.string   "type"
+    t.string   "authorize"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

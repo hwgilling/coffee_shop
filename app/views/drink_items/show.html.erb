@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @drink_item.order_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @drink_item.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @drink_item.size %>
+</p>
+
+<p>
+  <strong>Extra shot:</strong>
+  <%= @drink_item.extra_shot %>
+</p>
+
+<p>
+  <strong>Milk:</strong>
+  <%= @drink_item.milk %>
+</p>
+
+<p>
+  <strong>Addins:</strong>
+  <%= @drink_item.addins %>
+</p>
+
+<p>
+  <strong>Iced:</strong>
+  <%= @drink_item.iced %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @drink_item.cost %>
+</p>
+
+<%= link_to 'Edit', edit_drink_item_path(@drink_item) %> |
+<%= link_to 'Back', drink_items_path %>
